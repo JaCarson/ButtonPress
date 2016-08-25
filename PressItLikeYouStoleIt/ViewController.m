@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *buttonClicked;
 
 @end
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+
+
+
+
+
+
 }
 
 
@@ -24,6 +32,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+static int tapCount = 0;
+
+- (IBAction)buttonClicked:(id)sender  {
+    
+    tapCount++;
+    
+    NSLog(@"%d", tapCount);
+    
+
+    
+          
+          
+}
+
 
 
 @end
