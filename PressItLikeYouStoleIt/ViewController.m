@@ -19,11 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-
-
-
-
-
+    
+    [_buttonClicked setTitle: @"0" forState:UIControlStateNormal];
 
 }
 
@@ -40,6 +37,11 @@ static int tapCount = 0;
     tapCount++;
     
     NSLog(@"%d", tapCount);
+    
+    [_buttonClicked setTitle: [NSString stringWithFormat:@"%d", tapCount] forState:UIControlStateNormal];
+    [NSString stringWithFormat:@"%d", tapCount];
+    
+    
     
 
     
